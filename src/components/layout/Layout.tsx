@@ -1,14 +1,20 @@
-import { Header } from '../Header/Header.tsx'
-import { Footer } from '../Footer/Footer.tsx'
-import { Navbar } from '../Navbar/Navbar.tsx'
-import { Main } from '../Main/Main.tsx'
+import { Header } from '../Header/Header'
+import { Footer } from '../Footer/Footer'
+import { Navbar } from '../Navbar/Navbar'
+import React from 'react'
 
-export const Layout = () => {
+interface LayoutProps {
+    children: React.ReactNode;
+}
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
             <Header />
             <Navbar />
-            <Main />
+            <main>
+                {children}
+            </main>
             <Footer />
         </>
     )

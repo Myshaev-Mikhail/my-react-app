@@ -1,10 +1,13 @@
-import React from 'react';
-import './assets/styles/global.css'
+import React from 'react'
 import { Layout } from './components/layout/Layout'
+import { Main } from './components/Main/Main'
 
-const App: React.FC = () => {
-    const myText = "Привет из компонента Message!";
-    return <Layout />;
-};
+function App() {
+    return (
+        <Layout>
+            <Main />
+        </Layout>
+    )
+}
 
-export default App;
+export default App
