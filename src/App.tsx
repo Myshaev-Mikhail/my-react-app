@@ -1,14 +1,23 @@
-import React from 'react'
-import { Layout } from './components/layout/Layout'
-import { CardList } from './components/CardList/CardList.tsx'
-import {Main} from "./components/Main/Main.tsx";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './components/layout/Layout.tsx';
+import { HomePage } from './pages/HomePage.tsx';
+import { CardsPage } from './pages/CardsPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 
-function App() {
+const App = () => {
     return (
-        <Layout>
-            <Main />
-        </Layout>
-    )
-}
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path="cards" element={<CardsPage />} />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
 
-export default App
+    );
+};
+
+export default App;
