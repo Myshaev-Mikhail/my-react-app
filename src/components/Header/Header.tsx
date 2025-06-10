@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import './Header.css';
+import { SignUpModal } from '../Main/SignUp';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
     return (
         <header>
             <div className="menu">
@@ -15,10 +22,13 @@ export const Header = () => {
 
                 <div className="menu-right">
                     <p>For Recruiters</p>
-                    <button className="sign" id="openModalBtn">Sign up</button>
-                    <button className="login">Login in</button>
+                    <button className="sign" onClick={openModal}>Sign up</button>
+                    <button className="login">Log in</button>
                 </div>
             </div>
+
+            {/* Вставляем модальное окно */}
+            <SignUpModal isOpen={isModalOpen} onClose={closeModal} />
         </header>
     );
 };
