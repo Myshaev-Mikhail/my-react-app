@@ -107,3 +107,17 @@ button:focus-visible {
     color: #888;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .card {
+        padding: 1em;
+    }
+}

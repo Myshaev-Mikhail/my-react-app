@@ -43,7 +43,7 @@ main {
                 z-index: -2;
             }
             .img{
-                width: 850px;
+                width: 50%;
                 display: block;
                 margin: 0 auto;
                 justify-content: center;
@@ -124,7 +124,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+
         height: 508px;
 
     }
@@ -142,6 +142,17 @@ main {
         color: white;
     }
 
+    .profile-image {
+        max-width: 40%;
+        text-align: right;
+        margin-left: auto;
+    }
+
+    .profile-image img {
+        width: 160%;
+        margin-left: 263px;
+    }
+
     .join-now {
         display: inline-block;
         background-color: rgba(61, 30, 221, 0.9);
@@ -157,15 +168,84 @@ main {
     .join-now:hover {
         background-color: rgba(61, 30, 221, 1);
     }
+}
 
-    .profile-image {
-        max-width: 40%;
-        text-align: right;
-        margin-left: auto;
+@media (max-width: 768px) {
+    main {
+        padding-top: 60px;
     }
 
-    .profile-image img {
-        width: 160%;
-        margin-left: 263px;
+    .Candidates {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 100% !important;
+        padding-bottom: 50px;
+    }
+
+    .connect-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .connect-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .connect-content img {
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .connect-content-text {
+        align-items: center;
+        text-align: center;
+        max-width: 99%;
+    }
+
+    .profile-section {
+        flex-direction: column;
+    }
+
+    .profile-content {
+        max-width: 90%;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-text {
+        margin: 0;
+        text-align: center;
+    }
+
+    main .profile-image {
+        max-width: 60%;
+        text-align: center;
+    }
+
+    main .profile-image img {
+        width: 100%;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+
+    .everything-section .img2 {
+        width: 100%;
+    }
+
+    .quote-container .img2 {
+        width: 90%;
+    }
+
+    .quote-container .img_dop1,
+    .quote-container .img_dop2 {
+        margin-left: 0;
     }
 }

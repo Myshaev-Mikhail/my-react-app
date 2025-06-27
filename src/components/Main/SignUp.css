@@ -82,3 +82,31 @@
 .button:hover {
     background-color: #e0e0e0;
 }
+
+@media (max-width: 768px) {
+    .modalOverlay {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .modalContent {
+        padding: 10px;
+    }
+
+    .form {
+        gap: 10px;
+    }
+
+    .input, .button {
+        font-size: 14px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}

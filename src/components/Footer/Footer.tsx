@@ -4,12 +4,12 @@ export const Footer = () => {
         <footer>
             <div className="footer-left">
                 <h3>Jobly.co</h3>
-                <a>We support a pool of diverse young creatives and engineers.</a>
-                <p>2023 Jobly.co Copyright and All rights reserved.</p>
+                <a>Мы поддерживаем группу разнообразных молодых креативных специалистов и инженеров.</a>
+                <p>2023 Jobly.co Авторские права и все права защищены.</p>
             </div>
             <div className="footer-right">
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Условия и положения</a>
+                <a href="#">политика конфиденциальности</a>
             </div>
         </footer>
     )

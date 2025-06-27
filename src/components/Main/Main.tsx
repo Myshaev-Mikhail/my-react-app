@@ -6,10 +6,9 @@ export const Main: React.FC = () => {
         <main>
             <div className="Candidates">
                 <div className="Candidates-content">
-                    <h1>Candidates with Creative & Engineering Backgrounds</h1>
-                    <p>This is the place to show yourself and land entry level jobs at cutting-edge companies. Launch your career here.</p>
-                    <button className="can">Join Now</button>
-                    <p>Looking for candidate's? Hire now</p>
+                    <h1>HR агенство</h1>
+                    <p>Это место, где можно показать себя и получить работу начального уровня в передовых компаниях. Начните свою карьеру здесь.</p>
+                    <p>Ищете кандидатов? Нанимайте сейчас</p>
                     <div className="gradient">
                         <img className="img" src="Candidates.png" alt="Candidates" />
                     </div>
@@ -17,9 +16,9 @@ export const Main: React.FC = () => {
                         <img className="img_dop1" src="11-11%20140357.png" alt="Decor 1" />
                         <img className="img_dop2" src="140431.png" alt="Decor 2" />
                     </div>
-                    <h1>Creating an Online Presence is Hard.<br />Jobly Makes it Easy for Recruiters to See you</h1>
+                    <h1>Создать присутствие в Интернете сложно.<br />Jobly облегчает рекрутерам поиск вас</h1>
                     <p>Zhao Cui</p>
-                    <p>Founder at Jobly.co</p>
+                    <p>Основатель Jobly.co</p>
                 </div>
             </div>
 
@@ -29,10 +28,10 @@ export const Main: React.FC = () => {
                 <div className="connect-content">
                     <img src="183343.png" alt="Connect with recruiter" />
                     <div className="connect-content-text">
-                        <h1>Connect With Recruiter</h1>
+                        <h1>Связаться с рекрутером</h1>
                         <p>
-                            Get instant access to a curated pool of top creative & tech talent actively seeking their next role.
-                            Find highly qualified job!
+                            Получите мгновенный доступ к тщательно отобранному пулу лучших творческих и технических талантов, которые активно ищут свою следующую работу.
+                            Найдите высококвалифицированную работу!
                         </p>
                     </div>
                 </div>
@@ -41,8 +40,7 @@ export const Main: React.FC = () => {
             <div className="profile-section">
                 <div className="profile-content">
                     <div className="profile-text">
-                        <h1>Set up your profile.<br />Let jobs find you.</h1>
-                        <p className="join-now">Join Now</p>
+                        <h1>Настройте свой профиль.<br />Пусть работа сама вас найдет.</h1>
                     </div>
                     <div className="profile-image">
                         <img src="photo_2024-11-20_18-49-23.jpg" alt="Set up your profile" />
